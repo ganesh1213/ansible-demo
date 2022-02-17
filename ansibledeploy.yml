@@ -1,0 +1,8 @@
+- hosts: all
+  remote_user: ec2-user
+  become: yes
+  tasks:
+  - name: Coping files
+    copy:
+      src: /var/lib/jenkins/workspace/project/target/newapp.war
+      dest: /opt/apache-tomcat-8.5.75/webapps
