@@ -5,4 +5,4 @@
   - name: Coping files
     copy:
       src: /var/lib/jenkins/workspace/project/target/newapp.war
-      dest: /opt/apache-tomcat-8.5.75/webapps
+      dest: /usr/local/tomcat/webapps/
